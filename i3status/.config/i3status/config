@@ -1,0 +1,69 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 1
+        color_good = "#8AE234"
+        color_degraded = "#FCE94F"
+        color_bad = "#EF2929"
+}
+
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "cpu_usage"
+order += "load"
+order += "cpu_temperature 0"
+order += "disk /"
+order += "disk /media/srsantos/SANX210"
+order += "tztime date"
+order += "tztime time"
+
+ethernet _first_ {
+        format_up = "  : %ip "
+        format_down = " : "
+}
+
+wireless  _first_ {
+        format_up = "  : %essid @ %quality (%ip) "
+        format_down = "  "
+}
+
+tztime date {
+        format = "  : %a-%d-%b "
+}
+
+tztime time {
+        format = "  : %r "
+}
+
+cpu_usage {
+        format = "  : %usage "
+}
+
+load {
+        format = "  : %1min %5min %15min "
+        max_threshold = "3"
+}
+
+disk "/" {
+        prefix_type = custom
+        format = "  : %used/%total "
+}
+
+disk "/media/srsantos/SANX210" {
+        prefix_type = custom
+        format = "  : %used/%total "
+        format_not_mounted = "  : UMNTD "
+}
+
+cpu_temperature 0 {
+        format = "  : %degrees°C "
+        max_threshold = "61"
+        path = "/sys/class/thermal/thermal_zone0/temp"
+}

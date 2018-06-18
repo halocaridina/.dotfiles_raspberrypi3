@@ -1,0 +1,4 @@
+#include "/home/srsantos/.config/Xresources/fonts.conf"
+#include "/home/srsantos/.config/Xresources/pointer.conf"
+#include "/home/srsantos/.config/Xresources/URxvt.conf"
+#include "/home/srsantos/.config/Xresources/Xterm.conf"
