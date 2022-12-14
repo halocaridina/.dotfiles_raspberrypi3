@@ -64,6 +64,6 @@ disk "/media/srsantos/SANX210" {
 
 cpu_temperature 0 {
         format = "  : %degrees°C "
-        max_threshold = "61"
+        max_threshold = "65"
         path = "/sys/class/thermal/thermal_zone0/temp"
 }
