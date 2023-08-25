@@ -13,6 +13,8 @@ export HISTCONTROL=ignoredups
 # ... and ignore same sucessive entries.
 export HISTCONTROL=ignoreboth
 export HISTTIMEFORMAT="%h/%d - %H:%M:%S "
+export HISTFILESIZE=2500
+export HISTSIZE=2500
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -88,6 +90,7 @@ fi
 alias rm='rm -i'
 alias cp='cp -i'
 alias bye='exit'
+alias ls='ls --color=auto'
 alias l='ls -lh --color=auto'
 alias ll='ls -alh --color=auto'
 alias pi-hole='ssh pi@10.0.1.10'

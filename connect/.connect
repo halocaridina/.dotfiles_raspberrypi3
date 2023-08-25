@@ -1,4 +1,4 @@
-Cyberdyne	srsantos	cyberdyne	22 ssh
-Office_Intel	srsantos	office_intel	22 ssh
-SkyNet	srsantos	skynet	22 ssh
-Ubuntu_Server	srsantos	ubuntu_server	22 ssh
+Odroid-C4	srsantos	odroid-c4.local	22 ssh
+Odroid-XU4	srsantos	odroid-xu4.local	22 ssh
+RaspPi0_2	pi	the-santos-lab.dynu.net	22 ssh
+RaspPi3	srsantos	raspberrypi3.local	22 ssh

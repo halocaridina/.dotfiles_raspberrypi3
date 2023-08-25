@@ -14,12 +14,11 @@ print_info() {
 
     info "CPU" cpu
     info "GPU" gpu
-    info "GPU Driver" gpu_driver
-    info "Resolution" resolution    
+    info "GPU Driver" gpu_driver    
     info "Memory" memory    
     info "Disk" disk
 
-    info underline
+#    info underline
     
     info "DE" de
     info "WM" wm
@@ -32,6 +31,7 @@ print_info() {
 
     info "Shell" shell
     info "Terminal" term
+    info "Resolution" resolution
     info "Terminal Font" term_font
     
     info underline
@@ -46,8 +46,8 @@ print_info() {
     info line_break
     info cols
     info line_break
-#
-#    info "Song" song
+
+    info "Song" song
 }
 
     # info "GPU Driver" gpu_driver  # Linux/macOS only
@@ -165,7 +165,7 @@ speed_type="bios_limit"
 # Example:
 # on:    'i7-6500U (4) @ 3.1GHz'
 # off:   'i7-6500U (4) @ 3.100GHz'
-speed_shorthand="off"
+speed_shorthand="on"
 
 # Enable/Disable CPU brand in output.
 #
@@ -219,7 +219,7 @@ cpu_cores="logical"
 # C:   'Intel i7-6500U (4) @ 3.1GHz [27.2°C]'
 # F:   'Intel i7-6500U (4) @ 3.1GHz [82.0°F]'
 # off: 'Intel i7-6500U (4) @ 3.1GHz'
-cpu_temp="off"
+cpu_temp="C"
 
 
 # GPU
@@ -340,7 +340,7 @@ public_ip_host="http://ident.me"
 # disk_show=('/'):
 #      'Disk (/): 74G / 118G (66%)'
 #
-disk_show=('/' '/boot')
+disk_show=('/boot' '/' '/media/camera_data')
 
 # Disk subtitle.
 # What to append to the Disk subtitle.

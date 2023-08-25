@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/bin/feh --bg-scale '/home/srsantos/.config/i3/wallpapers/dark-metal-grid-8.png' 
+/usr/bin/feh --no-fehbg --bg-scale '/home/srsantos/.config/i3/wallpapers/dark-metal-grid-8.png' 
